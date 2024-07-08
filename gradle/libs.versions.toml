@@ -14,6 +14,7 @@ compose-plugin = "1.6.11"
 junit = "4.13.2"
 kotlin = "2.0.0"
 assertk = "0.28.1"
+androidUiTest = "1.6.8"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -29,6 +30,11 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 
 # AssertK
 assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
+
+# Android Compose UI Test
+androidx-ui-test-junit4-android = { module = "androidx.compose.ui:ui-test-junit4-android", version.ref = "androidUiTest" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidUiTest" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
